@@ -410,11 +410,11 @@ table {
 
 @media (min-width: 0px) and (max-width: 500px) {
     body {
-        width: 70%; /* Adjusted width */
+        width: 80%; /* Adjusted width */
     }
 
     .about_main {
-        width: 60%; /* Adjusted width */
+        width: 70%; /* Adjusted width */
         margin-top: 150px; /* Adjusted margin-top */
     }
 
