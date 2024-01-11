@@ -433,12 +433,12 @@ table {
         top: -50px;
         left: -60px;
         padding: 50px 80px;
-/*         padding-top: 350px; */
+        padding-top: 350px;
     }
     .login_form .right .firstUser {
         border: 2px solid #d01a14;
         border-radius: 5px;
-        width: 300px;
+        width: 380px;
         height: 40px;
         display: flex;
         margin: auto; /* Ajout de cette propriété pour centrer horizontalement */
