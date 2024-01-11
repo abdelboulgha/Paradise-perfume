@@ -14,7 +14,7 @@ emoji ='🙁';
 // countDiv.innerHTML = `<div id="card-list">The number of perfumes that you added to the card list is <span style="color: red;">${count}</span> you can't send the order ${emoji}</div>`;
 let perfumeNumber =`عدد العطور التي أضفتها إلى القائمة هو` + `<span style="color: red;">${count}</span> `;
 let warning = 'للاسف لا يمكنك إرسال الطلبية'+ ` ${emoji} ` ;
-let condition = 'يجب عليك اضافة ثلاثة عطور على الاقل إلى القائمة' ;
+let condition = 'المرجو اضافة ثلاثة عطور على الاقل إلى القائمة' ;
 countDiv.innerHTML = `<div id="card-list">  ${perfumeNumber} ${warning} ${condition}</div>`;
 
 let commandes = [];
@@ -73,7 +73,7 @@ function addToCard() {
         // countDiv.innerHTML = `<div id="card-list">The number of perfumes that you added to the card list is <span style="color: red;">${count}</span> you can't send the order ${emoji}</div>`;
         perfumeNumber =`عدد العطور التي أضفتها إلى القائمة هو` + `<span style="color: red;">${count}</span> `;
         warning = 'للاسف لا يمكنك إرسال الطلبية'+ ` ${emoji} ` ;
-        condition = 'يجب عليك اضافة ثلاثة عطور على الاقل إلى القائمة' ;
+        condition = 'المرجو اضافة ثلاثة عطور على الاقل إلى القائمة' ;
         countDiv.innerHTML = `<div id="card-list">  ${perfumeNumber} ${warning} ${condition}</div>`;
       } else {
         emoji = '🙂';
