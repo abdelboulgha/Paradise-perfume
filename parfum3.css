@@ -408,3 +408,32 @@ table {
     }
 }
 
+@media (min-width: 0px) and (max-width: 500px) {
+    body{
+        width: 130vw;
+
+    }
+
+    .login_form .right .firstUser {
+        border: 2px solid #d01a14;
+        border-radius: 5px;
+        width: 350px;
+        height: 40px;
+        display: flex;
+        margin: auto; /* Ajout de cette propriété pour centrer horizontalement */
+    }
+
+}
+
+
+@media (min-height: 0px) and (max-height: 300px) {
+    
+    .login_form .right{
+        position: relative;
+        top: -50px;
+        left: -60px;
+        padding: 50px 80px;
+        padding-top: 450px;
+    }
+}
+
