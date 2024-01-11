@@ -409,6 +409,10 @@ table {
 }
 
 @media (min-width: 0px) and (max-width: 500px) {
+     body{
+        width: 130vw;
+
+    }
     .about_main{
         display: block;
         margin-top: 300px;
