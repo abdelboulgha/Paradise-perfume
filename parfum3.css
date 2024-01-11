@@ -416,7 +416,7 @@ table {
     .about_main{
         display: block;
         margin-top: 300px;
-        width: 70%;
+        width: 65%;
         flex-direction: column;
         position: relative;
     }
