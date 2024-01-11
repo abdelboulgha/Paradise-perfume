@@ -426,7 +426,7 @@ table {
 }
 
 
-@media (min-height: 0px) and (max-height: 300px) {
+@media (min-height: 0px) and (max-height: 400px) {
     
     .login_form .right{
         position: relative;
