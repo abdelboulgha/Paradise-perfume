@@ -409,20 +409,26 @@ table {
 }
 
 @media (min-width: 0px) and (max-width: 500px) {
-    body {
-        width: 130vw; /* Adjusted width */
-    }
+     body{
+        width: 80%;
 
-    .about_main {
-        width: 90%; /* Adjusted width */
-        margin-top: 150px; /* Adjusted margin-top */
     }
-
+    .about_main{
+        display: block;
+        margin-top: 300px;
+        width: 70%;
+        flex-direction: column;
+        position: relative;
+    }
     .login_form .right .firstUser {
-        width: 100%; /* Full width */
-        max-width: 350px; /* Max width to maintain styling */
-        margin: auto;
+        border: 2px solid #d01a14;
+        border-radius: 5px;
+        width: 350px;
+        height: 40px;
+        display: flex;
+        margin: auto; /* Ajout de cette propriété pour centrer horizontalement */
     }
+
 }
 
 
