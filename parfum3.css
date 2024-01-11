@@ -1,0 +1,410 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    width: 15px;
+}
+
+
+
+::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    background: linear-gradient(to top, #c7b920 , #d01a14);
+}
+
+/*About*/
+
+.about{
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+}
+
+.about h1{
+    font-size: 60px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+}
+
+.about h1 span{
+    background: linear-gradient(to right, #c7b920 , #d01a14);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 15px;
+}
+
+ h1 span{
+    text-align: center;
+    background: linear-gradient(to right, #c7b920 , #d01a14);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 15px;
+
+}
+
+h1{
+    text-align: center;
+}
+
+.about .about_main{
+    position: relative;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.about .about_main .about_image{
+    display: flex;
+    margin-top: 50px;
+}
+
+.about .about_main .about_image .about_small_image{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 15px;
+}
+
+.about .about_main .about_image .about_small_image img{
+    height: 92px;
+    margin: 5px 0;
+    cursor: pointer;
+    background: linear-gradient(to right, #d01a14 , #c7b920);
+    display: block;
+    border-radius: 6px;
+    padding: 5px 5px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.6);
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.about .about_main .about_image .about_small_image img:hover{
+    opacity: 1;
+}
+
+.about .about_main .image_contaner{
+    padding: 10px;
+    display: flex;
+}
+
+.about .about_main .image_contaner img{
+    border: 3px solid #d01a14;
+    border-radius: 20px;
+    height: 430px;
+    padding: 30px;
+    box-shadow: 0 0 8px #d01a14;
+}
+
+.about .about_main .about_text{
+    margin-top: 45px;
+}
+
+.about .about_main .about_text p{
+    background: linear-gradient(to left, #c7b920 , #d01a14);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 22px;
+    width: 600px;
+    text-align: justify;
+    padding: 25px 30px;
+    border: 2px solid #c7b920;
+    border-radius: 20px;
+    box-shadow: 0 0 8px #c7b920;
+}
+
+.about .about_btn{
+    color: black;
+    background: none;
+    position: relative;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    padding: 10px 25px;
+    border: 2px solid #c7b920;
+    text-decoration: none;
+    box-shadow: 0 0 8px #c7b920;
+    transition: 0.5s;
+}
+
+.about .about_btn:hover{
+    border: 2px solid transparent;
+    background: #c7b920;
+    color: white;
+}
+
+
+
+
+/*Login Form*/
+
+.login_form{
+    width: 100%;
+    height: 100vh;
+    margin-top: 250px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.login_form .right{
+    position: relative;
+    top: -50px;
+    left: -60px;
+    padding: 50px 80px;
+}
+
+.login_form .right h1{
+    font-family: prevattscriptssk;
+    font-size: 45px;
+    margin-bottom: 40px;
+}
+
+.login_form .right p{
+    margin-bottom: 5px;
+}
+
+
+
+.login_form .right .user{
+    border: 2px solid #d01a14;
+    border-radius: 5px;
+    width: 350px;
+    height: 40px;
+    display: flex;
+}
+
+
+.login_form .right .firstUser {
+    border: 2px solid #d01a14;
+    border-radius: 5px;
+    width: 333px;
+    height: 40px;
+    display: flex;
+    margin: auto; /* Ajout de cette propriété pour centrer horizontalement */
+}
+
+
+
+.login_form .right .user i{
+    position: relative;
+    top: 9px;
+    left: 15px;
+    color: #c7b920;
+}
+
+.login_form .right .user .username{
+    position: relative;
+    left: 9%;
+    width: 295px;
+    background: none;
+    outline: none;
+    border: none;
+    display: flex;
+    font-size: 15px;
+}
+
+.login_form .right .passworg_tag{
+    margin: 15px 0 5px 0;
+}
+
+.login_form .right .password{
+    border: 2px solid #d01a14;
+    border-radius: 5px;
+    width: 350px;
+    height: 40px;
+    display: flex;
+}
+
+.login_form .right .password i{
+    position: relative;
+    top: 9px;
+    left: 15px;
+    color: #c7b920;
+}
+
+.login_form .right .password input{
+    position: relative;
+    left: 9%;
+    width: 295px;
+    background: none;
+    border: none;
+    outline: none;
+    display: flex;
+    font-size: 15px;
+}
+
+::-webkit-input-placeholder{
+    color: black;
+    opacity: 0.7;
+}
+
+.login_form .right .forget{
+    position: relative;
+    left: 60%;
+    margin: 6px 0 10px 0;
+    cursor: pointer;
+}
+
+.login_form .right button{
+    width: 350px;
+    color: white;
+    padding: 7px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    background: linear-gradient(to right, #c7b920 , #d01a14);
+}
+
+.login_form .right .loging_icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.login_form .right .loging_icon a{
+    width: 30px;
+    height: 30px;
+    margin: 0 2px;
+    border-radius: 50%;
+    background: #f3f3f3;
+    box-shadow: 0 0 5px rgba(0,0,0,0.6);
+}
+
+.login_form .right .loging_icon img{
+    width: 20px;
+    margin: 5px 5px;
+}
+
+
+
+.carousel-box{
+/* background-color: #1c0080; */
+position: relative;
+height: 300px;
+justify-content: center;
+align-items: center;
+border: 1px solid rgba(255 , 255 , 255, 0.1);
+margin: auto;
+}
+
+.carousel{
+    position: relative;
+    height: 200px;
+    perspective: 1500;
+}
+.carousel .carousel-item{
+    width: 250px;
+    cursor: pointer;
+}
+
+.carousel .carousel-item img {
+    max-width: 230px;
+    border-radius: 10px;
+    transform: translateX(8px) translateY(-100px);
+    object-fit: cover;
+    object-position: center;
+}
+
+/* #img1 #img2 #img3 #img4 {
+    width: 20px;
+} */
+
+
+#inputV{
+    display: none;
+}
+
+
+#addTocard{
+    width: 200px;
+    margin-left: 130px;
+}
+
+#info {
+    margin-left: 50px;
+    margin-right: 50px; /* Add this to ensure equal margins on both sides */
+    width: max-content; /* Set the width to the content width */
+    margin: auto; /* Center the div horizontally */
+}
+
+/* #information{
+    margin: auto;
+} */
+
+/* @media (min-width:0px) and (max-width:1000px){
+    .about .about_main .image_contaner{
+        padding: 10px;
+        display: block;
+    }
+
+} */
+
+#card-list{
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 30px;
+    border: solid 4px black;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+
+@media (min-width: 0px) and (max-width: 1000px) {
+    .about_main{
+        display: block;
+        margin-top: 300px;
+        flex-direction: column;
+        position: relative;
+        
+    }
+    .login_form{
+        width: 100%;
+        height: 100vh;
+        margin: auto;
+        margin-top: 65px;
+        margin-left: 60px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-size: cover;
+        background-position: center;
+    }
+}
+

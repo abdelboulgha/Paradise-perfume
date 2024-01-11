@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="parfum3.css" />
+    <!-- Add this link in the head section of your HTML -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Paradise perfume</title>
+  </head>
+  <body>
+    <div class="about" id="About">
+      <h1 style="font-family: 'Dancing Script', cursive;
+      font-style: italic;"><span>Paradise perfume</span></h1>
+
+      <div class="about_main">
+        <div class="about_image">
+          <div class="about_small_image" style="display: none">
+            <img src="#" onclick="functio(this)" />
+            <img src="#" onclick="functio(this)" />
+            <img src="#" onclick="functio(this)" />
+            <img src="#" onclick="functio(this)" />
+          </div>
+
+          <div class="image_contaner">
+            <img src="parfum/bg.jpg" id="imagebox" />
+          </div>
+        </div>
+
+        <div class="login_form">
+          <div class="right" style="direction: rtl;">
+            <br>
+            <div id = "countDiv" style="direction: rtl;"></div>
+          <br>
+            <form action="#" method="post" name="contact-form" >
+
+              <p style="direction: rtl; margin-right: 40px;">اختر عطرًا وأضفه إلى القائمة</p>
+              <div class="firstUser" style="direction: rtl; text-align: right !important;">
+                
+                <select
+                class="select-product"
+                name="genre"
+                id="genreSelect"
+                onchange="updatePerfumeOptions()"
+                
+              >
+                <option style="direction: rtl;" value="" disabled selected>رجال او نساء</option>
+                <option value="Homme" style="direction: rtl;">رجال</option>
+                <option value="Femme" style="direction: rtl;">نساء</option>
+              </select>
+
+                <select
+                  class="select-product"
+                  name="perfume"
+                  id="perfumeSelect"
+                  menu="true"
+                >
+                  <option value="" disabled selected style="direction: rtl;text-align: center;" >نوع العطر</option>
+                  <optgroup id="genderFirst">
+                    <option value="" disabled>
+                      يجب عليك اختيار رجال او نساء اولا
+                    </option>
+                  </optgroup>
+
+                  <optgroup
+                    id="hommeOptions"
+                    label="رجال"
+                    style="direction: rtl; display: none "
+                  >
+                  <option value="Tom Ford Black Orchid">Tom Ford Black Orchid</option>
+                  <option value="Givenchy Pi">Givenchy Pi</option>
+                  <option value="Bleu de chanel">Bleu de chanel</option>
+                  <option value="Sauvage">Sauvage</option>
+                  <option value="Dior Intense">Dior Intense</option>
+                  <option value="Hugo Boss">Hugo Boss</option>
+                  <option value="Diesel">Diesel</option>
+                  <option value="Azzaro Wanted">Azzaro Wanted</option>
+                  <option value="Bad Boy">Bad Boy</option>
+                  <option value="Ultra Male">Ultra Male</option>
+                  <option value="Invictus">Invictus</option>
+                  <option value="Versace Eros">Versace Eros</option>
+                  <option value="Strong with you">Strong with you</option>
+                  <option value="Black js">Black xs</option>
+                  <option value="ACQUA DI GIO">ACQUA DI GIO </option>
+                  <option value="Sauvage Elixir">Sauvage Elixir</option>
+                  <option value="Scandale Homme">Scandale Homme</option>
+                  <option value="Yves Saint Laurent Y">Yves Saint Laurent Y</option>
+                  <option value="La Nuit De L homme">La Nuit De L'homme</option>
+
+                  </optgroup>
+
+                  <optgroup
+                    id="femmeOptions"
+                    label="نساء"
+                    style="direction: rtl; display: none"
+                  >
+                    <option value="BLACK OPIUM">BLACK OPIUM</option>
+                    <option value="L INTERDIT">L'INTERDIT</option>
+                    <option value="My Way">My Way</option>
+                    <option value="Yara">Yara</option>
+                    <option value="Scandal">Scandal</option>
+                    <option value="Libre">Libre</option>
+                    <option value="Light Bleu">Light Bleu</option>
+                    <option value="Burberry">Burberry</option>
+                    <option value="Chance">Chance</option>
+                    <option value="Good Girl">Good Girl</option>
+                    <option value="Baccarat Rouge">Baccarat Rouge</option>
+                    <option value="Mon Guerlain">Mon Guerlain</option>
+                    <option value="La Nuit Trésor">La Nuit Trésor</option>
+                    <option value="Idole">Idole</option>
+                    <option value="La Vie Est Belle">La Vie Est Belle</option>
+                    <option value="The One">The One</option>
+                    <option value="Allure Chanel">Allure Chanel</option>
+                    <option value="Mon Paris">Mon Paris</option>
+                    <option value="Goccibloon">Goccibloon</option>
+
+
+                  </optgroup>
+                </select>
+                <select
+                class="select-product"
+                name="size"
+                id="size"
+              >
+                <option value="" disabled selected style="direction: rtl;">الحجم</option>
+                <option value="35ml">35ml</option>
+                <option value="55ml">55ml</option>
+              </select>
+                
+
+                
+
+
+              </div>
+              <br>
+              <div id="information" style="direction: rtl;">
+              <button id="addTocard" type="button" onclick="addToCard()" style="direction: rtl; display: block;
+              margin: auto;">أضف عطرًا إلى القائمة</button>
+              <br>
+              <br>
+              <div id="info" style="direction: rtl;" >
+              <h2 style="direction: rtl;text-align: center; ">معلوماتكم الشخصية للتواصل معكم</h2>
+              <br>
+              <p style="direction: rtl;margin-right: 20px;">الاسم الكامل</p>
+              <div class="user" style="direction: rtl;">
+                <i class="fas fa-user" style="margin-right: 20px;"></i>
+                <input
+                id="firstName"
+                style="direction: rtl;margin-right: 20px; "
+                  type="text"
+                  name="fullName"
+                  placeholder="الاسم الكامل"
+                  class="username"
+                />
+              </div>
+              <p style="direction: rtl;margin-right: 20px;">رقم الهاتف</p>
+              <div class="user" style="direction: rtl;">
+                <i style="margin-right: 20px;" class="fas fa-phone"></i>
+                <input
+                id="phoneNumber"
+                
+                style="direction: rtl;margin-right: 20px;"
+                  type="tel"
+                  name="phoneNumber"
+                  placeholder="رقم الهاتف"
+                  class="username"
+                />
+              </div>
+              <p style="direction: rtl;margin-right: 20px;">رقم الواتساب</p>
+              <div class="user" style="direction: rtl;">
+                <i style="margin-right: 20px;" class="fas fa-phone"></i>
+                <input
+                id="whatsappNumber"
+                
+                style="direction: rtl;margin-right: 20px;"
+                  type="tel"
+                  name="whatsappNumber"
+                  placeholder="رقم الواتساب"
+                  class="username"
+                />
+              </div>
+              <p style="direction: rtl;margin-right: 20px;">العنوان الكامل</p>
+              <div class="user" style="direction: rtl;">
+                <i class="fa-solid fa-house" style="margin-right: 20px;"></i>
+                <input
+                id="lastName"
+                style="margin-right: 20px;"
+                  type="text"
+                  name="address"
+                  placeholder="العنوان الكامل"
+                  class="username"
+                />
+              </div>
+
+              <div id="divData" style="display: none;"> </div>
+               
+              <br />
+              <button type="submit" onclick="sendData(event)">ارسال الطلبية</button>
+            </div>
+
+          </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="parfum.js" defer></script>
+  </body>
+</html>
