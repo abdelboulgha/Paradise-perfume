@@ -438,7 +438,7 @@ table {
     .login_form .right .firstUser {
         border: 2px solid #d01a14;
         border-radius: 5px;
-        width: 350px;
+        width: 348px;
         height: 40px;
         display: flex;
         margin: auto; /* Ajout de cette propriété pour centrer horizontalement */
