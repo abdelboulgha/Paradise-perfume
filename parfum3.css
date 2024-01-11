@@ -433,7 +433,15 @@ table {
         top: -50px;
         left: -60px;
         padding: 50px 80px;
-        padding-top: 450px;
+        padding-top: 400px;
+    }
+    .login_form .right .firstUser {
+        border: 2px solid #d01a14;
+        border-radius: 5px;
+        width: 370px;
+        height: 40px;
+        display: flex;
+        margin: auto; /* Ajout de cette propriété pour centrer horizontalement */
     }
 }
 
